@@ -11,16 +11,17 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 15px;
             padding: 20px;
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            transition: background 1s ease-in-out;
         }
         .section {
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
         }
         .section:hover {
             transform: translateY(-5px);
@@ -49,11 +50,22 @@
         #tech-news {
             background: linear-gradient(135deg, #1e3c72, #2a5298);
         }
+        .weather-icon {
+            width: 50px;
+            height: 50px;
+        }
+        .landscape {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="section" id="weather">
+        <img src="https://source.unsplash.com/600x200/?weather" alt="Weather Landscape" class="landscape">
         <h2>Latest Weather</h2>
+        <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="Snow Icon" class="weather-icon">
         <p><strong>Location:</strong> M1X 1T9, Toronto, Canada</p>
         <p><strong>Temperature:</strong> -7°C</p>
         <p><strong>Condition:</strong> Light Snow</p>
@@ -61,18 +73,21 @@
         <p><strong>Updated:</strong> 8:27 PM EST</p>
     </div>
     <div class="section" id="cricket">
+        <img src="https://source.unsplash.com/600x200/?cricket" alt="Cricket Landscape" class="landscape">
         <h2>Cricket Matches</h2>
         <p><strong>Current Match:</strong> India vs Australia</p>
         <p><strong>Score:</strong> India 220/3 (40 overs)</p>
         <p><strong>Upcoming Match:</strong> India vs England (Feb 15, 2025)</p>
     </div>
     <div class="section" id="news">
+        <img src="https://source.unsplash.com/600x200/?news" alt="News Landscape" class="landscape">
         <h2>News - Kerala & Canada</h2>
         <p><strong>Kerala:</strong> Heavy rains cause flooding in Kochi.</p>
         <p><strong>Canada:</strong> Government announces new student visa rules.</p>
         <p><strong>Updated:</strong> 10:30 AM</p>
     </div>
     <div class="section" id="tech-news">
+        <img src="https://source.unsplash.com/600x200/?technology" alt="Technology Landscape" class="landscape">
         <h2>Technology News</h2>
         <p><strong>Apple:</strong> Announces iPhone 16 with AI-powered features.</p>
         <p><strong>Google:</strong> Launches Gemini AI for improved search.</p>
